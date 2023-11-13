@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>상세설명 보이기/숨기기</title>
+   <link rel="stylesheet" href="css/event.css">
+   
+</head>
+<body>
+   <div id="item">
+      <img src="images/dog.jpg" alt="강아지">
+      <button onclick="showText()" class="btn_show" id="show">상세 설명 보기</button>
+      <div id="detail" class="text">
+         <h4>강아지</h4>
+         <p>인간과 가장 친한 동물 중 하나로써 사람에게 딱붙어서
+            애교를 부리는 동물이다. 산책을 자주 시켜줘야하며 
+            겨울만되면 털쪄서 복실복실해지는게 특징이다.
+         </p>
+         <button onclick="hideText()">상세 설명 닫기</button>
+      </div>
+   </div>
+   <script src="js/event.js"></script>
+</body>
+</html>

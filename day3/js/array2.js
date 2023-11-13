@@ -14,13 +14,22 @@ console.log(num[0]);
 
 //전체 요소 출력
 for(let i = 0; i < num.length;i++){
-   document.write(num[i]+" ");
+   console.log(num[i]);
+}
+
+//for in 문 사용 
+/*for (let 변수 in 배열이름){
+   console.log(배열이름[변수]);
+}*/
+console.log("for~ in 문 검색")
+for(let n in num){
+   console.log(num[n]);
 }
 
 console.log(num[1] - num[2]);
 console.log(num[1] <= num[2]);
 
-//합계 및 ㅂ평균
+//합계 및 평균
 let sum =0;
 for(let i =0; i<num.length; i++){
    // sum= sum+num[i];

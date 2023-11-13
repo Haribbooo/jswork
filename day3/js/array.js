@@ -17,10 +17,16 @@ console.log(animal[1]);
 animal[2] ="dog";
 
 //삭제
+delete animal[1];
 
 
 //전체 요소(값) 조회(목록)
 //0번 인덱스부터 시작하고 배열의 값이 미만일 것.
 for(let i = 0; i < animal.length;i++){
    document.write(animal[i]+" ");
+}
+document.write("<br>")
+//for in 문
+for( let i in animal){
+   document.write(animal[i] + " ");
 }
