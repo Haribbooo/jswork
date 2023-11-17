@@ -1,0 +1,20 @@
+//원의 둘레와 면적
+//원의 둘레 = 2 * PI * 반지름
+//원의 면적 =  PI * 반지름 * 반지름
+
+function Circle(radius){
+   this.radius =radius; //멤버변수 , 필드
+
+ this.length = function(){
+   return 2 * Math.PI * this.radius;
+ }
+
+ this.area = function(){
+   return  Math.PI * this.radius* this.radius;
+ }
+}
+
+let c1 = new Circle(4);
+
+document.write("원의 둘레:"+c1.length().toFixed(2)+"cm<br>")
+document.write("원의 면적:"+c1.area().toFixed(2)+"cm<sup>2<br>")
